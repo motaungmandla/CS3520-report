@@ -1,8 +1,68 @@
----
-title: Home
-layout: home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS3520-report</title>
+</head>
+<body>
+    <h1 style="color:rgb(22, 5, 179); text-transform: capitalize;"; >REPORT FOR:</h1>
+    <h2 style="color:rgb(8, 8, 253);">CS3520 ASSIGNMENT-0</h2><br>
+    <div>
+        <h4 style="padding-left: 40px;"><i>A 2-bit binary adder circuit diagram</i></h4>
+        <center><img src="img1.png" alt="circuit diagram" height="400", width="600"><br></center>
+        <h2>TESTING AND VERIFICATION PROCESS</h2>
+        <p style="font-size: larger;">The digital circuit above was tested both by hand and with the Digital Works software.
+            While testing by hand, we were taking random 2-bit inputs and performing the addition
+            and tracing the inputs on the circuit diagram we had on paper to verify that it indeed
+            correctly computed the sums as expected. <br><br>
+            During the testing, we were using different scenerios such as when the inputs would not
+            leave a carry (or have a carry of zero in other words). For that we were using many different 2-bit
+            binary input combinations including the binary numbers: 01 and 10, 11 and 00, 10 and 00 being added together.
+            For all of these numbers, the carry output being generated was a zero as we had expected.
+            <br><br>
+            We then considered other input combinations that would have the sum being zero but a carry output of 1. We
+            used the numbers 10+10 and the output of our circuit was as expected again.
+            We repeated the testing steps using the simulator and the same inputs we were using while testing by hand.<br><br>
+            <h2>CHALLENGES AND SOLUTIONS</h2>
+            We faced quite a few challenges along the way. Before we arrived at this correctly functioning circuit, we gave
+            the circuit many attempts. In our first circuit attempt, the circiut worked for most of the inputs, however the input 
+            with all ones gave an incorrect output. We had to tweak the circuit diagram a little bit, which brought us to the second 
+            attempt. In our second attempt we arrived at the well functioning circuit,however it had 3 half adders which did not comply 
+            to the given criteria. We optimized the circuit through logic synthetics, to be implemented with only 2 half adders(i.e fewer gates) 
+            as required in the instructions.
 
-{% include about/about.html %}
-{% include projects/projects.html limit=4 %}
-{% include essays/essays.html limit=6 %}
+        </p>
+    </div>
+    <hr>
+    <footer>
+        <p><em><strong>This submission is a result of a joint effort between:</strong><br>
+                            Motaung Mandla(2022)<br>
+                            Lenyolosa Lenyolosa(2022)<br>
+                            Ribisoni Makupu(2022)<br>
+                            Thabiso Mpopo(2022)<br>
+                            Thabiso 
+    </em></p>
+    </footer>
+</body>
+<style>
+    *{
+        background-color: rgb(219, 219, 221);
+    }
+    @keyframes move-text{
+        from{
+            h1{
+                color: red;
+            }
+        }
+        to{
+            h1{
+                color: blue;
+            }
+    }
+    }
+    h1{
+        animation: move-text 2s infinite forwards;
+    }
+</style>
+</html>
