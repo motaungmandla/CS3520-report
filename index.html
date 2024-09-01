@@ -29,10 +29,15 @@
             During the testing, we were using different scenerios such as when the inputs would not
             leave a carry (or have a carry of zero in other words). For that we were using many different 2-bit
             binary input combinations including the binary numbers: 01 and 10, 11 and 00, 10 and 00 being added together.
-            For all of these numbers, the carry output being generated was a zero as we had expected.
-            <br><br>
-            We then considered other input combinations that would have the sum being zero but a carry output of 1. We
-            used the numbers 10+10 and the output of our circuit was as expected again.
+            For all of these numbers, the carry output being generated was a zero as we had expected. Specifically for inputs 01 and 10, we 
+            were expecting binary 3(i.e. 11) as output and the screenshot is shared below!
+            <br>
+            <center><img src = "output2.png" alt = "output" height = "350" width = "550"></center>
+            <br>
+            We then considered other input combinations that would produce a carry output. We
+            used the numbers 10+10 and the output of our circuit was as expected again.Specifically for the inputs 11 and 11, we were anticipating 
+            binary 6(i.e. 110) as the output and the obtained output is shown below<br>
+            <center><img src ="output.png" alt = "output" height = "350" width = "550"> </center>
             We repeated the testing steps using the simulator and the same inputs we were using while testing by hand.<br><br>
             <h2>CHALLENGES AND SOLUTIONS</h2>
             We faced quite a few challenges along the way. Before we arrived at this correctly functioning circuit, we gave
@@ -47,6 +52,7 @@
     <hr>
     <footer>
         <p><em><strong>This submission is a result of a joint effort between:</strong><br>
+            <div id="uuu">
                             Motaung Mandla(202200990)<br>
                             Lenyolosa Lenyolosa(202202295)<br>
                             Ribisoni Makupu(202201995)<br>
@@ -54,12 +60,16 @@
                             Thabiso Phutheho(202201989)<br>    
                             Maqelepo Sekhohola<br>
                             Liteboho Sethathi(202201969)<br>
+            </div>
     </em></p>
     </footer>
 </body>
 <style>
     *{
         background-color: rgb(219, 219, 221);
+    }
+    #uuu{
+        padding-left: 10px;
     }
     @keyframes move-text{
         from{
